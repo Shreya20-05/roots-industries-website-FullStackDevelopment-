@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Industries India Private Limited - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-orange-400 shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="https://rootsems.com/wp-content/uploads/2021/12/Roots-logo-300x212.png" alt="Roots Logo"
+                    style="width: 60px; height: auto;">
+                <span class="text-2xl font-bold text-gray-500">Roots Industries India Private Limited</span>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="{{ url_for('index') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Home</a>
+                </li>
+                <li><a href="{{ url_for('about') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">About
+                        Us</a></li>
+                <li><a href="{{ url_for('products') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Products
+                        & Services</a></li>
+                <li><a href="{{ url_for('careers') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Careers</a>
+                </li>
+                <li><a href="{{ url_for('contact') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Contact
+                        Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 relative inline-block">
+                    Get in Touch
+                    <span
+                        class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-orange-600 rounded-full"></span>
+                </h2>
+                <p class="font-serif text-2xl font-bold mb-6 text-gray-600">Have a project in mind or just want to say hello? We'd love to
+                    hear from you!</p>
+                <p class="font-serif text-2xl font-bold mb-6 text-gray-600">We're always happy to hear from you! Whether you have a
+                    question, need support, or want to discuss a potential partnership, feel free to reach out using the
+                    methods below.</p>
+                <form id="contactForm" class="max-w-2xl mx-auto p-8 bg-gray-50 rounded-lg shadow-md">
+                    <input type="text" placeholder="Your Name" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="email" placeholder="Your Email" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <textarea placeholder="Your Message" rows="6" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 resize-y"></textarea>
+                    <button type="submit"
+                        class="bg-orange-800 text-white hover:bg-orange-800 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   <footer class="relative bg-gradient-to-br from-orange-400 to-orange-500 text-gray-700 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Roots Industries</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                Innovating for a sustainable future. Committed to quality, precision, and excellence in industrial solutions.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Quick Links</h4>
+            <ul class="space-y-3 mt-4">
+                <li><a href="{{ url_for('about') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">About Us</a></li>
+                <li><a href="{{ url_for('products') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Products</a></li>
+                <li><a href="{{ url_for('careers') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Contact Info</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                123 Industrial Park Road,<br>
+                Coimbatore, Tamil Nadu, India<br>
+                Email: <a href="mailto:info@rootsindustries.com" class="hover:underline">info@rootsindustries.com</a><br>
+                Phone: <a href="tel:+911234567890" class="hover:underline">+91 123 456 7890</a>
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Follow Us</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                in<br>f<br>X
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center text-gray-800 text-sm mt-12 border-t border-gray-600 pt-6">
+        &copy; 2025 Roots Industries India Private Limited. All rights reserved.
+    </div>
+</footer>
+
+    <script src="{{ url_for('static', filename='animation.js') }}"></script>
+</body>
+
+</html>

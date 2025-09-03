@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Industries India Private Limited - Products & Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-orange-400 shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="https://rootsems.com/wp-content/uploads/2021/12/Roots-logo-300x212.png" alt="Roots Logo"
+                    style="width: 60px; height: auto;">
+                <span class="text-2xl font-bold text-gray-500">Roots Industries India Private Limited</span>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="{{ url_for('index') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Home</a>
+                </li>
+                <li><a href="{{ url_for('about') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">About
+                        Us</a></li>
+                <li><a href="{{ url_for('products') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Products
+                        & Services</a></li>
+                <li><a href="{{ url_for('careers') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Careers</a>
+                </li>
+                <li><a href="{{ url_for('contact') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="products" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 relative inline-block">
+                    Our Core Offerings
+                    <span
+                        class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-orange-600 rounded-full"></span>
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-blue-600 mb-4">⚙</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800"> Automotive Products</h3>
+                        <img src="https://www.rootsindustries.com/wp-content/themes/rootsindustries/assets/img/roots-sub-companies/roots-automotives.png"
+                            alt="Automotive Products" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶Roots Industries is renowned globally for its wide range of automotive horns, including electric, electronic, and air pressure models, supplied to major vehicle manufacturers and the aftermarket.  
+🔶They also produce various auto electrical accessories like relays, wiper blades, mobile chargers, security systems, and specialized switches, along with friction products such as brake pads and clutch plates, and automotive lighting solutions.
+
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-green-600 mb-4">🌱</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800">High Precision Engineering</h3>
+                        <img src="https://www.rootsindustries.com/wp-content/themes/rootsindustries/assets/img/roots-sub-companies/presicion-engineering.png"
+                            alt="High Precision Engineering" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶The company's High Precision Engineering Division manufactures critical parts, sub-assemblies, and high-level assemblies for demanding sectors like medical, aerospace, and general engineering.  
+🔶Their capabilities span advanced machining (4-axis and 5-axis), pressure and gravity die casting, plastic injection moulding, and comprehensive tool room services for various industries.
+
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-red-600 mb-4">🛠</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800"> Electric Vehicles(Roots Naveo)</h3>
+                        <img src="https://www.rootsindustries.com/wp-content/themes/rootsindustries/assets/img/roots-sub-companies/roots-naveo.png"
+                            alt="Electric Vehicles" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶Roots is also a player in the electric vehicle segment, primarily manufacturing electric buggies and golf carts.  
+🔶These vehicles are designed for various applications, including internal campus transportation, sightseeing, and cargo movement in diverse settings like resorts, airports, hospit
+
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-yellow-600 mb-4">📈</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800"> Metrology Services</h3>
+                        <img src="https://www.rootsindustries.com/wp-content/themes/rootsindustries/assets/img/roots-sub-companies/roots-metrology.png"
+                            alt="Metrology Services" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶 Roots Metrology provides NABL-accredited calibration and testing services for various physical parameters, ensuring precision and accuracy for internal group companies and external clients.  
+🔶 They also offer third-party inspection services and specialized training and development programs in metrology.
+
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-indigo-600 mb-4">🔗</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800">Commercial Furniture (Roots Syona)</h3>
+                        <img src="https://www.rootsindustries.com/wp-content/themes/rootsindustries/assets/img/roots-sub-companies/syona-furnitures.png"
+                            alt="Commercial Furniture" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶Through Roots Syona, the company designs and manufactures ergonomically sound commercial
+                            furniture, focusing on office chairs and cafeteria setups.
+                            🔶They also produce the "EZECART", a well-regarded line of airport baggage trolleys.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-purple-600 mb-4">💡</div>
+                        <h3 class="font-serif text-2xl font-bold mb-6 text-gray-800"> Industrial Cleaning Equipment (Roots
+                            Multiclean)</h3>
+                        <img src="https://www.rootsmulticlean.com/wp-content/uploads/2022/05/rmcl-all-products-01.jpg"
+                            alt="Industrial Cleaning Equipment" class="mx-auto mb-4">
+                        <p class="font-serif text-l font-bold mb-6 text-gray-800">
+                            🔶Roots Multiclean, a significant part of the group, offers a comprehensive line of
+                            industrial cleaning solutions.
+                            🔶Their product range includes diverse types of sweepers(walk-behind, ride-on,
+                                truck-mounted), scrubbers, powerful vacuum cleaners for commercial and industrial use,
+                                high-pressure washers, and specialized machines for carpet and escalator cleaning.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" id="requestQuoteBtn"
+                    class="inline-block mt-12 bg-orange-700 text-white hover:bg-orange-800 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    Request a Quote
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="quoteModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-2xl max-w-2xl w-full relative">
+            <button id="closeModalBtn"
+                class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-3xl font-bold">&times;</button>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Request a Quote</h2>
+            <form method='post' enctype='multipart/form-data' id='quoteForm' action='/submit_quote' novalidate>
+                <div class='gform-body gform_body'>
+                    <ul id='gform_fields_1'
+                        class='gform_fields top_label form_sublabel_below description_below validation_below'>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_1'>Name<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <input name='name' id='modal_input_1' type='text' placeholder='Name *' required />
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_13'>Phone<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <input name='phone' id='modal_input_13' type='text' maxlength='10' placeholder='Phone *'
+                                    required />
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_3'>Email<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <input name='email' id='modal_input_3' type='email' placeholder='Email *' required />
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_4'>City<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <input name='city' id='modal_input_4' type='text' placeholder='City *' required />
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_15'>Pincode<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <input name='pincode' id='modal_input_15' type='text' maxlength='6'
+                                    placeholder='Pincode *' required />
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_16'>Select State/UT<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <select name='state_ut' id='modal_input_16' required>
+                                    <option value='' selected='selected'>Select State/UT *</option>
+                                    <option value='Andaman and Nicobar Islands'>Andaman and Nicobar Islands</option>
+                                    <option value='Andhra Pradesh'>Andhra Pradesh</option>
+                                    <option value='Arunachal Pradesh'>Arunachal Pradesh</option>
+                                    <option value='Assam'>Assam</option>
+                                    <option value='Bihar'>Bihar</option>
+                                    <option value='Chandigarh'>Chandigarh</option>
+                                    <option value='Chhattisgarh'>Chhattisgarh</option>
+                                    <option value='Dadra and Nagar Haveli and Daman and Diu'>Dadra and Nagar Haveli and
+                                        Daman and Diu</option>
+                                    <option value='Delhi'>Delhi</option>
+                                    <option value='Goa'>Goa</option>
+                                    <option value='Gujarat'>Gujarat</option>
+                                    <option value='Haryana'>Haryana</option>
+                                    <option value='Himachal Pradesh'>Himachal Pradesh</option>
+                                    <option value='Jammu and Kashmir'>Jammu and Kashmir</option>
+                                    <option value='Jharkhand'>Jharkhand</option>
+                                    <option value='Karnataka'>Karnataka</option>
+                                    <option value='Kerala'>Kerala</option>
+                                    <option value='Ladakh'>Ladakh</option>
+                                    <option value='Lakshadweep'>Lakshadweep</option>
+                                    <option value='Madhya Pradesh'>Madhya Pradesh</option>
+                                    <option value='Maharashtra'>Maharashtra</option>
+                                    <option value='Manipur'>Manipur</option>
+                                    <option value='Meghalaya'>Meghalaya</option>
+                                    <option value='Mizoram'>Mizoram</option>
+                                    <option value='Nagaland'>Nagaland</option>
+                                    <option value='Odisha'>Odisha</option>
+                                    <option value='Puducherry'>Puducherry</option>
+                                    <option value='Punjab'>Punjab</option>
+                                    <option value='Rajasthan'>Rajasthan</option>
+                                    <option value='Sikkim'>Sikkim</option>
+                                    <option value='Tamil Nadu'>Tamil Nadu</option>
+                                    <option value='Telangana'>Telangana</option>
+                                    <option value='Tripura'>Tripura</option>
+                                    <option value='Uttar Pradesh'>Uttar Pradesh</option>
+                                    <option value='Uttarakhand'>Uttarakhand</option>
+                                    <option value='West Bengal'>West Bengal</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_11'>Select customer type<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <select name='customer_type' id='modal_input_11' required>
+                                    <option value='' selected='selected'>Select customer type *</option>
+                                    <option value='existing'>Existing customer</option>
+                                    <option value='new'>New customer</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_17'>Customer Segment<span
+                                    class="gfield_required">*</span></label>
+                            <div class='ginput_container'>
+                                <select name='customer_segment' id='modal_input_17' required>
+                                    <option value='' selected='selected'>Customer Segment *</option>
+                                    <option value='Residential'>Residential</option>
+                                    <option value='Corporate'>Corporate</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="gfield">
+                            <label class='gfield_label' for='modal_input_7'>Message</label>
+                            <div class='ginput_container'>
+                                <textarea name='message' id='modal_input_7' placeholder='Message' rows='5'></textarea>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class='gform-footer'>
+                    <input type='submit' id='gform_submit_button_modal' class='gform_button' value='Submit Request'>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer class="relative bg-gradient-to-br from-orange-400 to-orange-500 text-gray-700 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Roots Industries</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                Innovating for a sustainable future. Committed to quality, precision, and excellence in industrial solutions.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Quick Links</h4>
+            <ul class="space-y-3 mt-4">
+                <li><a href="{{ url_for('about') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">About Us</a></li>
+                <li><a href="{{ url_for('products') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Products</a></li>
+                <li><a href="{{ url_for('careers') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Contact Info</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                123 Industrial Park Road,<br>
+                Coimbatore, Tamil Nadu, India<br>
+                Email: <a href="mailto:info@rootsindustries.com" class="hover:underline">info@rootsindustries.com</a><br>
+                Phone: <a href="tel:+911234567890" class="hover:underline">+91 123 456 7890</a>
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Follow Us</h4>
+           <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                in<br>f<br>X
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center text-gray-800 text-sm mt-12 border-t border-gray-600 pt-6">
+        &copy; 2025 Roots Industries India Private Limited. All rights reserved.
+    </div>
+</footer>
+
+    <div id="customMessageBox"
+        class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-[100] hidden">
+        <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full relative border-l-4" role="alert">
+            <button id="messageBoxCloseBtn"
+                class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-2xl font-bold leading-none">&times;</button>
+            <h3 id="messageBoxTitle" class="font-bold text-lg mb-2"></h3>
+            <p id="messageBoxContent" class="text-sm"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='animation.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,840 @@
+
+Universal Box-Sizing and Basic Body Styles
+
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        @keyframes pulse-logo {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+       
+        .logo-pulse {
+            animation: pulse-logo 2s infinite ease-in-out;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        @keyframes pulse-logo { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } } .logo-pulse { animation: pulse-logo 2s infinite ease-in-out; }
+       
+        @keyframes fadeInSlideUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInSlideUp 1s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+   
+        @keyframes float-element {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            25% { transform: translateY(-5px) translateX(5px); }
+            50% { transform: translateY(-10px) translateX(-5px); }
+            75% { transform: translateY(-5px) translateX(5px); }
+        }
+    
+        .float-animation {
+            animation: float-element 15s infinite ease-in-out;
+        }
+    body { font-family: 'Inter', sans-serif; }
+        
+        @keyframes pulse-logo {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        .logo-pulse {
+            animation: pulse-logo 2s infinite ease-in-out;
+        }
+        
+        
+        #quoteModal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+        }
+        #quoteModal:not(.hidden) {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+        }
+
+        body
+         {
+             font-family: 'Inter', sans-serif; 
+            }
+        @keyframes pulse-logo 
+        {
+             0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); }
+             }
+              .logo-pulse { animation: pulse-logo 2s infinite ease-in-out; 
+            }
+        
+        body  
+        { 
+            font-family: 'Inter', sans-serif;
+         }
+        @keyframes pulse-logo 
+        { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } 
+    }
+     .logo-pulse { animation: pulse-logo 2s infinite ease-in-out; 
+    }
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #2c3e50; /* Dark blue/grey */
+    color: #ecf0f1; /* Light text */
+    padding: 1rem 0;
+    position: fixed; /* Fixed at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px; /* Horizontal padding for content */
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2ecc71; /* Vibrant green for "Roots" */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    animation: bounceIn 1s ease-out forwards; /* Logo animation on load */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #090600; /* Green on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Blue to Green gradient */
+    color: white;
+    position: relative;
+    overflow: hidden; /* Crucial to contain background animations */
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.hero-content {
+    z-index: 10; /* Ensure content is above background animations */
+    position: relative;
+    opacity: 0;
+    animation: fadeInSlideUp 1.5s ease-out forwards 0.5s; /* Fade in and slide up */
+}
+
+.company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 6px;
+    text-shadow: 3px 3px 7px rgba(0,0,0,0.4);
+    animation: textGlow 3s infinite alternate; /* Subtle text glow */
+}
+
+.tagline {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-style: italic;
+    opacity: 0.9;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.call-to-action {
+    background-color: #e67e22; /* Orange button */
+    color: white;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.call-to-action:hover {
+    background-color: #d35400; /* Darker orange on hover */
+    transform: translateY(-7px) scale(1.02); /* Lift and slightly enlarge */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Background Animations Container */
+.background-animations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow interaction with content below */
+    z-index: 1; /* Below hero content */
+}
+
+/* Bubble Animations (Floating circles) */
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.475); /* Semi-transparent white */
+    border-radius: 50%;
+    animation: floatBubble 20s infinite ease-in-out;
+    filter: blur(1px);
+}
+
+.bubble-1 { width: 100px; height: 100px; top: 10%; left: 15%; animation-delay: 0s; }
+.bubble-2 { width: 70px; height: 70px; top: 50%; left: 80%; animation-delay: 4s; }
+.bubble-3 { width: 120px; height: 120px; top: 70%; left: 30%; animation-delay: 8s; }
+.bubble-4 { width: 60px; height: 60px; top: 25%; left: 60%; animation-delay: 12s; }
+.bubble-5 { width: 90px; height: 90px; top: 85%; left: 5%; animation-delay: 16s; }
+
+@keyframes floatBubble {
+    0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }
+    25% { transform: translateY(-20px) translateX(10px) scale(1.05); opacity: 0.2; }
+    50% { transform: translateY(-40px) translateX(-10px) scale(1); opacity: 0.15; }
+    75% { transform: translateY(-20px) translateX(10px) scale(0.95); opacity: 0.1; }
+    100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }
+}
+
+/* Line Animations (Subtle moving lines) */
+.line {
+    position: absolute;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0));
+    height: 2px;
+    animation: moveLine 10s infinite linear;
+    opacity: 0.5;
+}
+
+.line-1 { width: 100%; top: 20%; left: -100%; animation-delay: 0s; }
+.line-2 { width: 100%; top: 50%; left: -100%; animation-delay: 3s; }
+.line-3 { width: 100%; top: 80%; left: -100%; animation-delay: 6s; }
+
+@keyframes moveLine {
+    0% { transform: translateX(0); opacity: 0.5; }
+    50% { transform: translateX(200%); opacity: 0.8; } /* Moves across the screen */
+    100% { transform: translateX(0); opacity: 0.5; }
+}
+
+
+/* General Content Sections Styling */
+.content-section {
+    padding: 100px 25px; /* Generous padding */
+    max-width: 1000px;
+    margin: 40px auto; /* Space between sections */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* Deeper shadow */
+    animation: slideInUp 1s ease-out forwards; /* Animation for sections as they appear */
+    opacity: 0; /* Hidden initially for animation */
+}
+
+/* Adjust animation delay for subsequent sections */
+#about { animation-delay: 0.2s; }
+#services { animation-delay: 0.4s; }
+#contact { animation-delay: 0.6s; }
+
+
+.content-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Dark blue/grey */
+    position: relative;
+    display: inline-block; /* For underline effect */
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #2ecc71; /* Green underline */
+    border-radius: 2px;
+}
+
+.content-section p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Service Grid Styling */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Space between grid items */
+    margin-top: 40px;
+}
+
+.service-item {
+    background-color: #ecf0f1; /* Light grey background */
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-12px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #27ae60; /* Green for service titles */
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+/* Add these styles to your static/styles.css file */
+
+/* General modal overlay styles (already present in your HTML but good to confirm) */
+#quoteModal {
+    position: fixed;
+    inset: 0; /* Equivalent to top: 0; right: 0; bottom: 0; left: 0; */
+    background-color: rgba(17, 24, 39, 0.75); /* bg-gray-900 bg-opacity-75 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+#quoteModal:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+/* Styles for the modal content box itself */
+#quoteModal > div { /* This targets the inner white box with class="bg-white p-8 rounded-lg shadow-2xl max-w-2xl w-full relative" */
+    background-color: white;
+    padding: 2rem; /* p-8 */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    max-width: 42rem; /* max-w-2xl (Adjust if 2xl is too wide/narrow for your design) */
+    width: 100%;
+    position: relative;
+
+    /* >>> IMPORTANT CHANGES FOR SCROLLING <<< */
+    max-height: 90vh; /* Set a maximum height relative to the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS devices */
+    /* Add padding-right to account for scrollbar width, if needed for consistent layout */
+    padding-right: 2.5rem; /* Adjust based on your actual padding and scrollbar width */
+}
+
+/* Adjust button positioning for scrollbar */
+#closeModalBtn {
+    position: absolute;
+    top: 1rem; /* top-4 */
+    right: 1rem; /* right-4 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* text-3xl */
+    line-height: 1;
+    color: #4a5568; /* gray-600 */
+}
+
+#closeModalBtn:hover {
+    color: #1a202c; /* gray-900 */
+}
+
+
+/* Form field specific styles (if not already handled by Tailwind defaults or other CSS) */
+#quoteModal .gfield {
+    margin-bottom: 1.5rem;
+}
+
+#quoteModal .gfield_label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+#quoteModal .ginput_container input[type="text"],
+#quoteModal .ginput_container input[type="email"],
+#quoteModal .ginput_container input[type="tel"],
+#quoteModal .ginput_container select,
+#quoteModal .ginput_container textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f7fafc;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#quoteModal .ginput_container input:focus,
+#quoteModal .ginput_container select:focus,
+#quoteModal .ginput_container textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+#quoteModal .gfield_required {
+    color: #e53e3e;
+    margin-left: 0.25rem;
+}
+
+#quoteModal .gform_button {
+    background-color: #ea580c; /* orange-600 */
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+#quoteModal .gform_button:hover {
+    background-color: #c2410c; /* orange-700 */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05); /* Inner shadow */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #2ecc71; /* Green border on focus */
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.3);
+    outline: none; /* Remove default outline */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+form button[type="submit"] {
+    background-color: #efa206;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background-color: #eca704; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+/* Keyframe Animations */
+
+/* Logo initial bounce */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(-50px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(10px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Hero content fade in and slide up */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Company name subtle glow */
+@keyframes textGlow {
+    0% { text-shadow: 3px 3px 7px rgba(0,0,0,0.4); }
+    50% { text-shadow: 3px 3px 10px rgba(255,255,255,0.6); } /* Lighter glow */
+    100% { text-shadow: 3px 3px 7px rgba(0,0,0,0.4); }
+}
+
+/* Section slide in from bottom */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 15px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .hero-section {
+        height: 90vh; /* Adjust height for smaller screens */
+        padding-top: 100px;
+    }
+
+    .company-name {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+
+    .content-section {
+        padding: 70px 20px;
+        margin: 20px auto;
+    }
+
+    .content-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack services on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .call-to-action {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    form button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.body-bg {
+    background: linear-gradient(to bottom right, #de2ff9,#f49600); /* Mild orange gradient (PeachPuff to LightSalmon) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px; /* rounded-xl */
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+    border: 1px solid #ef6300; /* purple-200 */
+}
+
+.form-box h1 {
+    font-size: 36px; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #e100ff; /* purple-700 */
+    margin-bottom: 32px; /* mb-8 */
+    position: relative;
+}
+
+.form-box h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #ff00ea; /* purple-500 */
+}
+
+.input-group {
+    margin-top: 24px; /* space-y-6 equivalent, but applied to parent */
+}
+
+.input-field {
+    background: #ffffff; /* gray-100 */
+    margin: 16px 0; /* my-4 */
+    border-radius: 8px; /* rounded-lg */
+    display: flex;
+    align-items: center;
+    height: 48px; /* h-12 */
+    box-shadow: 0 1px 2px 0 rgba(255, 129, 18, 0.05); /* shadow-sm */
+    transition: all 0.3s ease;
+}
+
+.input-field:focus-within {
+    box-shadow: 0 0 0 2px #ffa200; /* ring-2 ring-purple-400 */
+}
+
+.input-field i {
+    color: #f200ff; /* gray-400 */
+    margin-left: 16px; /* ml-4 */
+}
+
+.input-field input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 12px; /* p-3 */
+    color: #000000; /* gray-800 */
+}
+
+form p {
+    text-align: left;
+    font-size: 14px; /* text-sm */
+    color: #000000; /* gray-600 */
+    margin-top: 8px; /* mt-2 */
+}
+
+form p a {
+    text-decoration: none;
+    color: #ee05ff; /* purple-600 */
+    font-weight: 500; /* font-medium */
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* flex-col */
+    gap: 16px; /* gap-4 */
+    margin-top: 32px; /* mt-8 */
+}
+
+.btn-field button {
+    flex: 1; 
+    font-weight: 600; 
+    padding: 12px 24px; 
+    border-radius: 8px; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+.btn-field button.active-btn {
+    background: #ee00ff; 
+    color: #fff;
+}
+
+.btn-field button.active-btn:hover {
+    background: #e600ff;
+    transform: scale(1.05); 
+}
+
+.btn-field button:not(.active-btn) {
+    background: #E5E7EB;
+    color: #374151; 
+}
+
+.btn-field button:not(.active-btn):hover {
+    background: #D1D5DB; 
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 768px) { 
+    .container {
+        padding: 40px; 
+    }
+    .btn-field {
+        flex-direction: row; 
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px; 
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+    max-width: 384px; 
+    width: 91.666667%; 
+    text-align: center;
+}
+
+.modal-content h3 {
+    font-size: 20px; 
+    font-weight: 600; 
+    margin-bottom: 16px; 
+    color: #1F2937; 
+}
+
+.modal-content p {
+    color: #374151;
+    margin-bottom: 24px; 
+}
+
+.modal-close-btn {
+    background-color: #7C3AED; 
+    color: #fff;
+    padding: 8px 24px; 
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close-btn:hover {
+    background-color: #6D28D9; 
+}
+

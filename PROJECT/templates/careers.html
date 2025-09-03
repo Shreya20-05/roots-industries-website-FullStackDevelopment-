@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots Industries India Private Limited - Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-orange-400 shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="https://rootsems.com/wp-content/uploads/2021/12/Roots-logo-300x212.png" alt="Roots Logo"
+                    style="width: 60px; height: auto;">
+                <span class="text-2xl font-bold text-gray-500">Roots Industries India Private Limited</span>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="{{ url_for('index') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Home</a>
+                </li>
+                <li><a href="{{ url_for('about') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">About
+                        Us</a></li>
+                <li><a href="{{ url_for('products') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Products
+                        & Services</a></li>
+                <li><a href="{{ url_for('careers') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Careers</a>
+                </li>
+                <li><a href="{{ url_for('contact') }}"
+                        class="bg-white border border-orange-500 text-gray-700 font-medium py-2 px-4 rounded hover:bg-orange-100">Contact
+                        Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section id="careers" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 relative inline-block">
+                    Careers at Roots
+                    <span
+                        class="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-20 h-1 bg-orange-600 rounded-full"></span>
+                </h2>
+
+                <div class="job-openings-list mb-12 text-left">
+                    
+                    <div
+                        class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Senior Software Engineer</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>🧑‍💻Job Title:</b> Senior Software Developer<br>
+                            <b>Job Description:</b>
+                            We are seeking an experienced and passionate Senior Software Developer to lead and contribute to the design,<br>
+                             development, and implementation of complex software systems. The ideal candidate should have a strong technical foundation,<br>
+                             leadership qualities, and a problem-solving mindset to deliver high-quality software solutions.</p><br>
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 5+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Developing scalable software solutions for industrial
+                                automation.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">
+                            Apply Now
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Manufacturing Plant Manager</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>🏭Job Title:</b> Manufacturing Plant Manager<br>
+                            <b>Job Description:</b>
+                           We are looking for an experienced and results-driven Manufacturing Plant Manager to oversee our daily operations,<br>
+                            manage production efficiency, ensure quality standards, and lead a team of supervisors and staff.<br>
+                           The ideal candidate will have a strong background in industrial management, production planning, and lean manufacturing practices.</p><br>
+                    
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b>Pollachi, India | <b>Experience:</b> 10+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Overseeing production operations and ensuring efficiency.
+                            </p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div
+                        class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Research & Development Scientist</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>🧪Job Title:</b> Research & Development (R&D) Scientist<br>
+                            <b>Job Description:</b>
+                            We are seeking an innovative and detail-oriented R&D Scientist to join our team and contribute to the development of new products,<br>
+                             processes, or technologies. The ideal candidate will play a critical role in designing experiments, analyzing data, and converting research<br>
+                              into real-world applications. This position demands creativity, precision, and collaboration across departments.</p><br>
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"> <b>Location:</b>Coimbatore, India | <b>Experience:</b> 3+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Innovating new materials and processes.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div
+                        class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Engineer and Technical Role</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>⚙️Job Title:</b> Engineer – Technical Role<br>
+                            <b>Job Description:</b>
+                            We are seeking a motivated and detail-oriented Engineer for a technical role involving product design, system optimization, <br>
+                            troubleshooting, and technical support. The ideal candidate will apply engineering principles to solve real-world problems, <br>
+                            improve processes, and work closely with cross-functional teams.</p><br>
+
+
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b>Coimbatore, India | <b>Experience:</b> 5+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Developing scalable solutions for industrial
+                                automation.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                      <div class="mb-4 md:mb-0">
+                       <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Information Technology Specialist</h4>
+                       <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>💻Job Title:</b> IT Specialist / Engineer<br>
+                     <b>Job Description:</b>
+                       We are seeking a skilled and proactive IT Specialist to maintain and enhance our technical infrastructure. <br>
+                       Responsibilities include troubleshooting, system administration, user support, and ensuring network security across departments.</p><br>
+
+                       <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 2+ Years</p>
+                       <p class="font-serif text-l font-bold mb-6 text-gray-600">Ensuring smooth operation of IT systems, user support, and data protection across the organization.</p>
+                        </div>
+                    <a href="#applicationForm"
+                        class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                        Now</a>
+                    </div>
+
+
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Quality Manager</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>✔️Job Title:</b> Quality Manager<br>
+                            <b>Job Description:</b>
+                            We are seeking an experienced and detail-focused Quality Manager to lead quality assurance, compliance, and process improvement activities. <br>
+                            The ideal candidate will ensure products meet internal standards and external regulations, while driving continuous quality enhancements.</p><br>
+
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 4+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Overseeing quality control processes and ensuring compliance with industry standards and certifications.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Sales and Marketing Executive</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>📈Job Title:</b> Sales and Marketing Executive<br>
+                            <b>Job Description:</b>
+                            We are looking for a dynamic Sales and Marketing Executive to promote our products and expand our customer base. <br>
+                            The role involves market research, campaign execution, client engagement, and achieving sales targets.</p><br>
+
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 2+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Driving brand awareness, generating leads, and building strong customer relationships in competitive markets.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Finance and Accounts Officer</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>💰Job Title:</b> Finance and Accounts Officer<br>
+                            <b>Job Description:</b>
+                            We are seeking a detail-oriented Finance and Accounts Officer to manage company finances, budgeting, and compliance. <br>
+                            The ideal candidate will be responsible for maintaining accurate financial records, preparing reports, and ensuring regulatory adherence.</p><br>
+
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 3+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Managing financial operations, audits, and reporting in alignment with company goals and government standards.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="font-serif text-2xl font-bold mb-6 text-orange-600">Logistics and Supply Chain Executive</h4>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-800"><b>🚚Job Title:</b> Logistics and Supply Chain Executive<br>
+                            <b>Job Description:</b>
+                            We are looking for an organized and efficient Logistics and Supply Chain Executive to manage the movement of goods, inventory, and vendor coordination. <br>
+                            The role involves planning, execution, and optimization of supply chain processes to ensure timely delivery and cost control.</p><br>
+
+                            <p class="font-serif text-l font-bold mb-6 text-orange-600"><b>Location:</b> Coimbatore, India | <b>Experience:</b> 2+ Years</p>
+                            <p class="font-serif text-l font-bold mb-6 text-gray-600">Overseeing inventory flow, vendor coordination, and on-time distribution within production and delivery timelines.</p>
+                        </div>
+                        <a href="#applicationForm"
+                            class="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-300 transition duration-300">Apply
+                            Now</a>
+                    </div>
+
+                </div>
+                <h3 class="text-3xl font-semibold text-orange-500 mb-6 text-center">Submit Your Application</h3>
+                <form id="applicationForm" action="{{ url_for('handle_application_form') }}" method="POST" enctype="multipart/form-data"
+                    class="max-w-2xl mx-auto p-8 bg-gray-50 rounded-lg shadow-md">
+                    <input type="text" id="applicantName" name="applicantName" placeholder="Your Full Name" required
+                        class="w-full p-3 mb-4 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="email" id="applicantEmail" name="applicantEmail" placeholder="Your Email Address" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="tel" id="applicantPhone" name="applicantPhone" placeholder="Your Phone Number (Optional)"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="text" id="applicantPosition" name="applicantPosition"
+                        placeholder="Position Applying For (e.g., Software Engineer)" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <label for="resumeUpload" class="block text-left text-gray-700 text-sm font-bold mb-2">Upload Resume
+                        (PDF/DOCX):</label>
+                    <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <textarea id="coverLetter" name="coverLetter" placeholder="Cover Letter / Message (Optional)" rows="6"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 resize-y"></textarea>
+                    
+                    <label for="dob" class="block text-left text-gray-700 text-sm font-bold mb-2">Date of Birth (DOB):</label>
+                    <input type="date" id="dob" name="dob"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    
+                    <input type="text" id="address" name="address" placeholder="Your Address"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="text" id="city" name="city" placeholder="City"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="text" id="pincode" name="pincode" placeholder="Pincode"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <input type="text" id="state_ut" name="state_ut" placeholder="State/UT"
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                    <button type="submit"
+                        class="bg-orange-700 text-white hover:bg-orange-800 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative bg-gradient-to-br from-orange-400 to-orange-500 text-gray-700 py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Roots Industries</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                Innovating for a sustainable future. Committed to quality, precision, and excellence in industrial solutions.
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Quick Links</h4>
+            <ul class="space-y-3 mt-4">
+                <li><a href="{{ url_for('about') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">About Us</a></li>
+                <li><a href="{{ url_for('products') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Products</a></li>
+                <li><a href="{{ url_for('careers') }}" class="font-serif text-sm text-white hover:text-gray-800 transition duration-300">Careers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Contact Info</h4>
+            <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                123 Industrial Park Road,<br>
+                Coimbatore, Tamil Nadu, India<br>
+                Email: <a href="mailto:info@rootsindustries.com" class="hover:underline">info@rootsindustries.com</a><br>
+                Phone: <a href="tel:+911234567890" class="hover:underline">+91 123 456 7890</a>
+            </p>
+        </div>
+
+        <div>
+            <h4 class="font-serif text-gray-700 text-lg font-semibold mb-4 border-b border-gray-600 pb-2 inline-block">Follow Us</h4>
+           <p class="font-serif text-sm text-white leading-relaxed mt-4">
+                in<br>f<br>X
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center text-gray-800 text-sm mt-12 border-t border-gray-600 pt-6">
+        &copy; 2025 Roots Industries India Private Limited. All rights reserved.
+    </div>
+</footer>
+
+    <script src="{{url_for('static',filename='animation.js')}}"></script>
+</body>
+
+</html>

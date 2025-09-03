@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login & Register</title> 
+   
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="body-bg">
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login</h1>
+
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Username" id="loginUsername">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="loginPassword">
+                    </div>
+                </div>
+                <p>Forgot Password? <a href="#">Click Here!</a></p>
+                <div class="btn-field">
+                    <button type="submit" id="loginBtn" class="active-btn">Login</button>
+                    <button type="button" id="signupRedirectBtn">Sign Up</button>
+                </div>
+            </form>
+
+            
+            <form id="registerForm" style="display: none;">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Username" id="regUsername">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="regEmail">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="regPassword">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" id="regConfirmPassword">
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="registerBtn" class="active-btn">Register</button>
+                    <button type="button" id="loginRedirectBtn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="customAlertModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h3 id="alertTitle"></h3>
+            <p id="alertMessage"></p>
+            <button id="alertCloseBtn" class="modal-close-btn">OK</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='animation.js') }}"></script>
+</body>
+
+</html>
